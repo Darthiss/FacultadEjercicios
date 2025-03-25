@@ -10,12 +10,15 @@ namespace Ejercicio1.Entidades
     {
         //Atributos
 
-        protected int legajo;
-        protected DateTime fechaIngreso;
+        private int _legajo;
+        private DateTime _fechaIngreso;
 
-        public int Legajo { get => legajo; set => legajo = value; }
-        public DateTime FechaIngreso { get => fechaIngreso; set => fechaIngreso = value; }
+        protected int Legajo { get => _legajo; set => _legajo = value; }
+        protected DateTime FechaIngreso { get => _fechaIngreso; set => _fechaIngreso = value; }
 
+
+        public override void GetCredential() { }
+        public abstract string ListarEmpleados(bool listarConId);
 
 
 

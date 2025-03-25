@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1.Entidades
 {
-    internal class Directivo
+    internal class Directivo : Empleado
     {
+
+        public override void GetNombreCompleto() { }
+
+        public override String ListarEmpleados(bool listarConId) { return null; }
+
+
     }
 }

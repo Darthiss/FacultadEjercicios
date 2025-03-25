@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio1
+namespace Ejercicio1.Entidades
 {
-    public partial class Empleados : Form
+    public partial class FormEmpleados : Form
     {
-        public Empleados()
+        public FormEmpleados()
         {
             InitializeComponent();
         }

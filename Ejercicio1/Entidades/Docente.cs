@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1.Entidades
 {
-    internal class Docente
+    internal class Docente : Empleado
     {
 
         public void GetNombreCompleto() { }
