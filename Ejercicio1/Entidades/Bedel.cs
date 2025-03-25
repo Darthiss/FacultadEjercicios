@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Ejercicio1.Entidades
 {
-    internal class Bedel
+    public class Bedel
     {
+
+        public void GetNombreCompleto() {  }
+
+        public String ListarEmpleados(bool listarConId) { }
+
     }
 }

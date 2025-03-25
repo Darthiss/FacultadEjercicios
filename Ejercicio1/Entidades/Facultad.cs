@@ -9,8 +9,11 @@ namespace Ejercicio1.Entidades
     internal class Facultad
     {
 
-        private List Alumno;
+        private List<Alumno> _alumnos;
         private int _cantidadSedes;
+        private List<Empleado> _empleados;
+        private String _nombre;
+
 
 
 

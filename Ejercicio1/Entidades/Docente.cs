@@ -8,5 +8,11 @@ namespace Ejercicio1.Entidades
 {
     internal class Docente
     {
+
+        public void GetNombreCompleto() { }
+
+        public String ListarEmpleados(bool listarConId) { }
+
+
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1.Entidades
 {
-    internal class Alumno
+    public class Alumno : Persona
+
     {
+
+        private int _codigo;
+
+        public void GetCredential() { };
+
     }
 }
