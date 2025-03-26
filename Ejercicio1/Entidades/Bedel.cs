@@ -14,7 +14,7 @@ namespace Ejercicio1.Entidades
         private String _apodo;
         protected string Apodo { get => _apodo; set => _apodo = value; }
 
-        public String ListarEmpleados(bool listarConId) { return null; }
+        public override String ListarEmpleados(bool listarConId) { return null; }
 
     }
 }

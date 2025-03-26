@@ -1,0 +1,11 @@
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.AssemblyReference.cache
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormLogin.resources
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Properties.Resources.resources
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.GenerateResource.cache
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Repos\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Repos\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Repos\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.pdb
+C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormLanding.resources

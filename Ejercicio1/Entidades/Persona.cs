@@ -15,7 +15,7 @@ namespace Ejercicio1.Entidades
         private string _apellido;
         private DateTime _fechaNac;
 
-        //Encapsulamiento de los at ributos
+        //Encapsulamiento de los atributos
 
         protected string Apellido { get => _apellido; set => _apellido = value; }
         protected string Nombre { get => _nombre; set => _nombre = value; }

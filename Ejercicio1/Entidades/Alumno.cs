@@ -14,7 +14,7 @@ namespace Ejercicio1.Entidades
 
         public int Codigo { get => _codigo; set =>  _codigo = value; }
 
-        protected override void GetCredential() { }
+        public override void GetCredential() { }
 
     }
 }

@@ -9,9 +9,9 @@ namespace Ejercicio1.Entidades
     internal class Docente : Empleado
     {
 
-        public void GetNombreCompleto() { }
+        public override void GetNombreCompleto() { }
 
-        public String ListarEmpleados(bool listarConId) { }
+        public override String ListarEmpleados(bool listarConId) { return null; }
 
 
     }
