@@ -34,7 +34,7 @@
             // 
             // btnAlumnos
             // 
-            this.btnAlumnos.Location = new System.Drawing.Point(59, 32);
+            this.btnAlumnos.Location = new System.Drawing.Point(95, 36);
             this.btnAlumnos.Name = "btnAlumnos";
             this.btnAlumnos.Size = new System.Drawing.Size(75, 23);
             this.btnAlumnos.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(59, 80);
+            this.btnEmpleados.Location = new System.Drawing.Point(95, 82);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(75, 23);
             this.btnEmpleados.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(204, 204);
+            this.ClientSize = new System.Drawing.Size(273, 264);
             this.Controls.Add(this.btnEmpleados);
             this.Controls.Add(this.btnAlumnos);
             this.Name = "FormLanding";

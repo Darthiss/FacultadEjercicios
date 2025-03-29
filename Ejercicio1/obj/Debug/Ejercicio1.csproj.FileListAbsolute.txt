@@ -9,3 +9,16 @@ C:\Repos\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.pdb
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.exe
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.pdb
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormLanding.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+S:\CAI\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.exe
+S:\CAI\FacultadEjercicios\Ejercicio1\bin\Debug\Ejercicio1.pdb
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.AssemblyReference.cache
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormLanding.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormLogin.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Properties.Resources.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.GenerateResource.cache
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.exe
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.pdb
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormAlumnos.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Entidades.FormEmpleados.resources
