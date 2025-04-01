@@ -57,7 +57,11 @@ namespace Ejercicio1
 
         private void button1_Click(object sender, EventArgs e)
         {
-             
+            this.Hide();
+            FormRegister formRegister = new FormRegister();
+            formRegister.ShowDialog();
+
+
         }
     }
 }

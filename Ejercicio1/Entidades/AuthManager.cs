@@ -12,12 +12,9 @@ namespace Ejercicio1.Entidades
     public class AuthManager
     {
         // DEF //
-        private const string Filepath = "usersCredentials.txt";
         private Dictionary<string, (string Salt, string Hash)> credentialsDictionary;
 
-
         // CONSTRUCTOR // 
-
         public AuthManager()
         {
             credentialsDictionary = new Dictionary<string, (string Salt, string Hash)>();
@@ -25,11 +22,26 @@ namespace Ejercicio1.Entidades
         }
 
         // METODOS // 
+        private static string GetUserCredentialsFilePath()
+        {
+            // Get the project's root directory (one level up from bin/Debug or bin/Release)
+            string projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
 
+            // Define the folder inside the project
+            string directoryPath = Path.Combine(projectRoot, "TextFiles");
 
-        //Este metodo carga el archivo con los usuarios y sus credenciales al diccionario
-        private void LoadUsersFromFile(){
-            FileInfo fi = new FileInfo(Filepath);
+            // Ensures the directory exists
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            return Path.Combine(directoryPath, "UserCredentials.txt");
+        }
+
+    //Este metodo carga el archivo con los usuarios y sus credenciales al diccionario
+    private void LoadUsersFromFile(){
+            FileInfo fi = new FileInfo(GetUserCredentialsFilePath());
             if (!fi.Exists){
                 MessageBox.Show("No existe el archivo en el path: ");
             }
@@ -93,6 +105,31 @@ namespace Ejercicio1.Entidades
 
         //metodo para generar una lista 
 
+        //Metodo para registrar
+
+        public bool Register(string user,  string password)
+        {
+
+            //abrir el archivo
+            //hacer el salt
+            //hacer el hash
+            //guardar el salt y el hash
+            //cerrar el archivo 
+            //devolver true
+
+            StreamWriter sw = new StreamWriter(GetUserCredentialsFilePath());
+
+            string salt = GenerateSalt();
+            string hash = HashPassword(password, salt);
+
+            sw.WriteLine($"{user};{salt};{hash}");
+            sw.Close();
+
+            return true;
+
+        }
+
+
 
 
         //// testing
@@ -100,8 +137,8 @@ namespace Ejercicio1.Entidades
 
         public void Test()
         {
-            string user = "admin";
-            string password = "admin";
+            string user = "Admin";
+            string password = "Admin";
 
             string salt = GenerateSalt();
             string hash = HashPassword(password, salt);
