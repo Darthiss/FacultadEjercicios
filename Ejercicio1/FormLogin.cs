@@ -39,9 +39,27 @@ namespace Ejercicio1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+
             string user = txtUserName.Text;
             string password = txtPassword.Text;
+
+            if (string.IsNullOrEmpty(user))
+            {
+                MessageBox.Show("El campo usuario no puede estar vacio");
+                return;
+            } 
+
+            if(string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("El campo contraseña no puede estar vacio");
+                return;
+            }
+
+            if(password.Length <= 8)
+            {
+                MessageBox.Show("La contraseña debe tener al menos 8 caracteres");
+                return;
+            }
 
             if( authManager.Login(user, password) ) {
                 this.Hide();

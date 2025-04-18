@@ -13,13 +13,13 @@ namespace Ejercicio1.Entidades
 
         private string _nombre;
         private string _apellido;
-        private DateTime _fechaNac;
+        private DateTime _fechanacimiento;
 
         //Encapsulamiento de los atributos
 
         protected string Apellido { get => _apellido; set => _apellido = value; }
         protected string Nombre { get => _nombre; set => _nombre = value; }
-        protected DateTime FechaNac { get => _fechaNac; set => _fechaNac = value; }
+        protected DateTime FechaNacimiento { get => _fechanacimiento; set => _fechanacimiento = value; }
 
         //En el diagrama, + es public, - es private, # es protected. 
         //Es redundante poner public en los metodos de esta clase porque nunca se va a instanciar un objeto de esta clase, solo se va a heredar.

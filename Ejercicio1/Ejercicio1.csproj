@@ -49,16 +49,20 @@
     <Compile Include="Entidades\Alumno.cs" />
     <Compile Include="Entidades\AuthManager.cs" />
     <Compile Include="Entidades\Bedel.cs" />
+    <Compile Include="Entidades\Carrera.cs" />
     <Compile Include="Entidades\Directivo.cs" />
     <Compile Include="Entidades\Docente.cs" />
     <Compile Include="Entidades\Empleado.cs" />
-    <Compile Include="Entidades\Facultad.cs" />
-    <Compile Include="Entidades\FormRegister.cs">
+    <Compile Include="Entidades\Examen.cs" />
+    <Compile Include="Entidades\PersistenciaUtils.cs" />
+    <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entidades\FormRegister.Designer.cs">
+    <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Materia.cs" />
+    <Compile Include="Entidades\Universidad.cs" />
     <Compile Include="FormEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +90,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Entidades\FormRegister.resx">
+    <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlumnos.resx">
@@ -119,6 +123,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TextFiles\alumnos.csv" />
+    <None Include="TextFiles\carreras.csv" />
+    <None Include="TextFiles\examenes.csv" />
+    <None Include="TextFiles\materias.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

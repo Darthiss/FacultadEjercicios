@@ -25,3 +25,4 @@ S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Entidades.FormEmpleado
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Entidades.FormRegister.resources
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.FormAlumnos.resources
 C:\Repos\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Entidades.FormEmpleados.resources
+S:\CAI\FacultadEjercicios\Ejercicio1\obj\Debug\Ejercicio1.Entidades.FormRegister.resources
