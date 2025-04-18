@@ -17,8 +17,8 @@ namespace Ejercicio1.Entidades
 
         //Encapsulamiento de los atributos
 
-        protected string Apellido { get => _apellido; set => _apellido = value; }
-        protected string Nombre { get => _nombre; set => _nombre = value; }
+        public string Apellido { get => _apellido; set => _apellido = value; }
+        public string Nombre { get => _nombre; set => _nombre = value; }
         protected DateTime FechaNacimiento { get => _fechanacimiento; set => _fechanacimiento = value; }
 
         //En el diagrama, + es public, - es private, # es protected. 

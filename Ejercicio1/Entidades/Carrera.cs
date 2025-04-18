@@ -16,22 +16,27 @@ namespace Ejercicio1.Entidades
         public int Id { get => _id; set => _id = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
         public List<Materia> Materias { get => _materias; set => _materias = value; }
-    
-    
+
+
         public Carrera(string carrera_para_cargar)
         {
             String[] datos = carrera_para_cargar.Split(';');
 
             this._id = int.Parse(datos[0]);
             this._nombre = datos[1];
-            this._materias = new List<Materia>();
+            this._materias = buscarMaterias(this.Id);
 
-            for (int i = 2; i < datos.Length; i++)
-            {
-                this._materias.Add(new Materia(datos[i]));
-            }
-        }   
-    
-    
+        }
+
+        private List<Materia> buscarMaterias (int id)
+        {
+            List<Materia> materias =    new List<Materia>();
+
+
+            return materias;
+        }
+
+
     }
 }
+

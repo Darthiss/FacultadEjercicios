@@ -31,5 +31,12 @@ namespace Ejercicio1
             FormEmpleados formEmpleados = new FormEmpleados();
             formEmpleados.ShowDialog();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormReportes formReportes = new FormReportes();
+            formReportes.ShowDialog();
+        }
     }
 }

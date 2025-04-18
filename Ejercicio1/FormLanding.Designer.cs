@@ -30,6 +30,7 @@
         {
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.btnEmpleados = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAlumnos
@@ -52,11 +53,22 @@
             this.btnEmpleados.UseVisualStyleBackColor = true;
             this.btnEmpleados.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(95, 132);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Reportes";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FormLanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 264);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEmpleados);
             this.Controls.Add(this.btnAlumnos);
             this.Name = "FormLanding";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.Button btnEmpleados;
+        private System.Windows.Forms.Button button1;
     }
 }

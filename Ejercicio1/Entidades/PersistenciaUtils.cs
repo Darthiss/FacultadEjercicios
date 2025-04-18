@@ -4,17 +4,38 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Ejercicio1.Entidades
 {
     public class PersistenciaUtils
     {
-        string archivoCsv = @"C:\Users\p044755\Documents\GitHub\ejercicio01_Facultad\Facultad\Facultad\Datos\";
+        //string archivoCsv = @"C:\Users\p044755\Documents\GitHub\ejercicio01_Facultad\Facultad\Facultad\Datos\";
+        string directoryPath = GetFilePath();
+
+        private static string GetFilePath()
+        {
+            // Get the project's root directory (one level up from bin/Debug or bin/Release)
+            string projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
+
+            // Define the folder inside the project
+            string directoryPath = Path.Combine(projectRoot, "TextFiles");
+
+            // Ensures the directory exists
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            return directoryPath +  @"\";
+        }
+
+
         public List<String> LeerRegistro(String nombreArchivo)
         {
-            archivoCsv = archivoCsv + nombreArchivo; // Cambia esta ruta al archivo CSV que deseas leer
+            directoryPath = directoryPath + nombreArchivo; // Cambia esta ruta al archivo CSV que deseas leer
 
-            String rutaArchivo = Path.GetFullPath(archivoCsv); // Normaliza la ruta
+            String rutaArchivo = Path.GetFullPath(directoryPath); // Normaliza la ruta
 
             List<String> listado = new List<String>();
 
@@ -40,16 +61,16 @@ namespace Ejercicio1.Entidades
         // Método para borrar un registro
         public void BorrarRegistro(string id, String nombreArchivo)
         {
-            archivoCsv = archivoCsv + nombreArchivo; // Cambia esta ruta al archivo CSV que deseas leer
+            directoryPath = directoryPath + nombreArchivo; // Cambia esta ruta al archivo CSV que deseas leer
 
-            String rutaArchivo = Path.GetFullPath(archivoCsv); // Normaliza la ruta
+            String rutaArchivo = Path.GetFullPath(directoryPath); // Normaliza la ruta
 
             try
             {
                 // Verificar si el archivo existe
                 if (!File.Exists(rutaArchivo))
                 {
-                    Console.WriteLine("El archivo no existe: " + archivoCsv);
+                    Console.WriteLine("El archivo no existe: " + directoryPath);
                     return;
                 }
 
@@ -64,7 +85,7 @@ namespace Ejercicio1.Entidades
                 }).ToList();
 
                 // Sobrescribir el archivo con las líneas restantes
-                File.WriteAllLines(archivoCsv, registrosRestantes);
+                File.WriteAllLines(directoryPath, registrosRestantes);
 
                 Console.WriteLine($"Registro con ID {id} borrado correctamente.");
             }

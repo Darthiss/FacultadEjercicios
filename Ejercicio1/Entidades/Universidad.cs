@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Ejercicio1.Entidades
 {
@@ -26,7 +27,6 @@ namespace Ejercicio1.Entidades
             this._cantidadSedes = 5;
             this._empleados = new List<Empleado>();
             this._nombre = "Universidad de Buenos Aires";
-
         }
 
 
@@ -38,9 +38,19 @@ namespace Ejercicio1.Entidades
 
             List<String> listado = persistencia.LeerRegistro("alumnos.csv");
 
+            int contador = 0;
+
             foreach (String registro in listado)
             {
-                Alumno alumno = new Alumno(registro);
+
+                if (contador == 0)
+                {
+                    contador++;
+                    continue;
+                }
+
+                alumnos.Add(new Alumno(registro));
+
             }
 
 
